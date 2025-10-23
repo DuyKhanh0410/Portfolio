@@ -10,16 +10,12 @@
                 ],
             },
             {
-                title: "Weather App",
-                description: "Ứng dụng dự báo thời tiết sử dụng API, hiển thị thông tin thời tiết chi tiết.",
-                fullDescription: "Ứng dụng dự báo thời tiết tích hợp API từ OpenWeatherMap. Hiển thị thông tin thời tiết hiện tại, dự báo 5 ngày tới, nhiệt độ, độ ẩm, tốc độ gió. Giao diện đẹp mắt với icon thời tiết động, hỗ trợ tìm kiếm theo tên thành phố. Responsive và tối ưu hiệu suất.",
-                tech: ["HTML5", "CSS3", "JavaScript", "Weather API", "Fetch API"],
+                title: "Portfolio",
+                description: "Website giới thiệu bản thân có các animation.",
+                fullDescription: "Dự án Portfolio giới thiệu bản thân được xây dựng với HTML, CSS và JavaScript thuần.",
+                tech: ["HTML5", "CSS3", "JavaScript"],
                 features: [
-                    "Hiển thị thời tiết hiện tại theo vị trí",
-                    "Dự báo thời tiết 5 ngày tới",
-                    "Tìm kiếm thời tiết theo tên thành phố",
-                    "Hiển thị nhiệt độ, độ ẩm, tốc độ gió",
-                    "Icon thời tiết động theo điều kiện"
+                    "Có thể được thêm trong tương lai."
                 ],
             },
             {
@@ -50,10 +46,6 @@
             backDelay: 1000,
             loop: true
         });
-
-        
-
-
 
         // Toggle mobile menu
         hamburger.addEventListener('click', () => {
