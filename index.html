@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar__container">
+            <a href="#home" class="navbar__logo">VDK</a>
+            
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#home" class="navbar__link active">Home</a></li>
+                <li><a href="#about" class="navbar__link">About</a></li>
+                <li><a href="#skills" class="navbar__link">Skills</a></li>
+                <li><a href="#projects" class="navbar__link">Projects</a></li>
+                <li><a href="#certificates" class="navbar__link">Certificates</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <p class="hero__greeting">Hi, I'm</p>
+                <h1 class="hero__title">Võ Duy Khanh</h1>
+                <p class="hero__subtitle"><span id="typing"></span></p>
+                <p class="hero__description">
+                    Mình luôn mong muốn tạo ra những trang web không chỉ đẹp mắt mà còn thân thiện và dễ sử dụng, giúp người dùng có trải nghiệm thật thoải mái. Trên hành trình trở thành một lập trình viên web chuyên nghiệp, mình không ngừng học hỏi và sáng tạo để mang đến những sản phẩm hữu ích, giàu cảm xúc và giá trị thực tiễn.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#about" class="btn btn-primary">
+                        🧾 View My Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        ✉️ Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="./assets/img/tải_xuống-removebg-preview.png" 
+                     alt="Võ Duy Khanh - Front-end Developer" 
+                     class="hero__avatar">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <h2 class="section__title animate-on-scroll">About me</h2>
+        
+        <div class="about__container">
+            <div class="about__image-box animate-on-scroll">
+                <img src="./assets/img/anhcuaKhanh.png" 
+                     alt="Ảnh cá nhân" 
+                     class="about__main-image">
+            </div>
+
+            <div> 
+                <div class="box-highlight">
+                    <div class="about__info animate-on-scroll">
+                    <div class="info__grid">
+                        <div class="info__item">
+                            <span class="info__label">👤 Họ và tên</span>
+                            <span class="info__value">Võ Duy Khanh</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__label">🎂 Ngày sinh</span>
+                            <span class="info__value">04/10/2005</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__label">📍 Địa chỉ</span>
+                            <span class="info__value">Hoài Nhơn, Bình Định</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__label">📧 Email</span>
+                            <span class="info__value">voduykhanh.6275@gmail.com</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__label">🏫 Học Vấn</span>
+                            <span class="info__value">Đại học Giao thông Vận tải TP.HCM (UTH)</span>
+                        </div>
+                        <div class="info__item">
+                            <span class="info__label">🎓 GPA</span>
+                            <span class="info__value">3.4 / 4.0</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="box-highlight">
+                    <div class="about__career-goal animate-on-scroll">
+                    <h3>🎯 Mục Tiêu </h3>
+                    <p>
+                        Trở thành một FullStack Developer chuyên nghiệp với khả năng tạo ra những sản phẩm web 
+                        đẹp mắt, hiệu suất cao và trải nghiệm người dùng tuyệt vời. 
+                        Mong muốn được làm việc trong môi trường năng động, học hỏi và phát triển kỹ năng.
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div style="margin-top: 4rem;">
+            <h3 class="section__title animate-on-scroll" style="font-size: 2rem;">📸 Thư Viện Ảnh</h3>
+            <div class="gallery__grid">
+                <div class="gallery__item animate-on-scroll">
+                    <img src="./assets/img/Khanh.jpg" 
+                         alt="Ảnh cá nhân 1" 
+                         class="gallery__image">
+                </div>
+                <div class="gallery__item animate-on-scroll">
+                    <img src="./assets/img/anhdulich.jpg" 
+                         alt="Ảnh cá nhân 2" 
+                         class="gallery__image">
+                </div>
+                <div class="gallery__item animate-on-scroll">
+                    <img src="./assets/img/anhchua.jpg" 
+                         alt="Ảnh cá nhân 3" 
+                         class="gallery__image">
+                </div>
+                <div class="gallery__item animate-on-scroll">
+                    <img src="./assets/img/anhdark.jpg" 
+                         alt="Ảnh cá nhân 4" 
+                         class="gallery__image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HOBBIES SECTION -->
+    <section class="section hobies-animation" style="background: var(--bg-gray);">
+        <h2 class="section__title animate-on-scroll">Sở Thích</h2>
+        <div class="hobbies__grid">
+            <div class="hobby__card animate-on-scroll">
+                <div class="hobby__icon">💻</div>
+                <h3 class="hobby__name">Lập Trình</h3>
+                <p class="hobby__description">Coding và học công nghệ mới</p>
+            </div>
+            <div class="hobby__card animate-on-scroll">
+                <div class="hobby__icon">🎮</div>
+                <h3 class="hobby__name">Gaming</h3>
+                <p class="hobby__description">Chơi game và giải trí</p>
+            </div>
+            <div class="hobby__card animate-on-scroll">
+                <div class="hobby__icon">✈️</div>
+                <h3 class="hobby__name">Du Lịch</h3>
+                <p class="hobby__description">Khám phá địa điểm mới</p>
+            </div>
+            <div class="hobby__card animate-on-scroll">
+                <div class="hobby__icon">🎵</div>
+                <h3 class="hobby__name">Âm Nhạc</h3>
+                <p class="hobby__description">Nghe nhạc và thư giãn</p>
+            </div>
+            <div class="hobby__card animate-on-scroll">
+                <div class="hobby__icon">⚽</div>
+                <h3 class="hobby__name">Thể Thao</h3>
+                <p class="hobby__description">Bóng đá và cầu lông</p>
+            </div>
+        </div>
+    </section>
+    <hr class="mt-80">
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+        <h2 class="section__title animate-on-scroll">Skills</h2>
+        <div class="skills__container">
+            <!-- Technical Skills -->
+             <div class="box-highlight">
+                <div class="skills__category animate-on-scroll">
+                <h3>💻 Kỹ Năng Lập Trình</h3>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">HTML5</span>
+                        <span class="skill__percentage">85%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">CSS3</span>
+                        <span class="skill__percentage">80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">JavaScript</span>
+                        <span class="skill__percentage">80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">React</span>
+                        <span class="skill__percentage">60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Bootstrap</span>
+                        <span class="skill__percentage">50%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="50"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Git & GitHub</span>
+                        <span class="skill__percentage">75%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="75"></div>
+                    </div>
+                </div>
+            </div>
+
+             </div>
+            
+            <!-- Languages -->
+             <div class="box-highlight">
+                <div class="skills__category animate-on-scroll">
+                <h3>🌐 Ngôn Ngữ</h3>
+                
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Tiếng Anh</span>
+                        <span class="skill__percentage">B2.5</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="80"></div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">🛠️ Công Cụ & Khác</h3>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">VS Code</span>
+                        <span class="skill__percentage">70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Canva</span>
+                        <span class="skill__percentage">60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Figma</span>
+                        <span class="skill__percentage">70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__header">
+                        <span class="skill__name">Responsive Design</span>
+                        <span class="skill__percentage">65%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-width="65"></div>
+                    </div>
+                </div>
+            </div>
+             </div>
+            
+        </div>
+    </section>
+    <hr class="mt-80">
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects" style="background: var(--bg-gray); margin-top: 80px;">
+        <h2 class="section__title animate-on-scroll">Dự Án</h2>
+        <div class="projects__grid">
+            <!-- Project 1 -->
+            <div class="project__card animate-on-scroll" onclick="openProjectModal(0)">
+                <img src="./assets/img/Screenshot 2025-10-21 224753.png" 
+                     alt="E-Commerce Website" 
+                     class="project__image">
+                <div class="project__content">
+                    <h3 class="project__title">Band Website</h3>
+                    <p class="project__description">
+                        Website đầu tay khi bắt đầu học lập trình web.
+                    </p>
+                    <div class="project__tech">
+                        <span class="tech__tag">HTML</span>
+                        <span class="tech__tag">CSS</span>
+                        <span class="tech__tag">JavaScript</span>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://github.com/DuyKhanh0410/w3_band" target="_blank" class="project__link" onclick="event.stopPropagation()">📂 GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project__card animate-on-scroll" onclick="openProjectModal(1)">
+                <img src="https://ui-avatars.com/api/?name=Weather+App&size=400&background=4facfe&color=fff&bold=true" 
+                     alt="Weather App" 
+                     class="project__image">
+                <div class="project__content">
+                    <h3 class="project__title">Weather App</h3>
+                    <p class="project__description">
+                        Ứng dụng dự báo thời tiết sử dụng API, hiển thị thông tin chi tiết và 5 ngày tới.
+                    </p>
+                    <div class="project__tech">
+                        <span class="tech__tag">HTML</span>
+                        <span class="tech__tag">CSS</span>
+                        <span class="tech__tag">JavaScript</span>
+                        <span class="tech__tag">API</span>
+                    </div>
+                    <div class="project__links">
+                        <a href="#" class="project__link" onclick="event.stopPropagation()">📂 GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project__card animate-on-scroll" onclick="openProjectModal(2)">
+                <img src="https://ui-avatars.com/api/?name=Task+Manager&size=400&background=f093fb&color=fff&bold=true" 
+                     alt="Task Manager" 
+                     class="project__image">
+                <div class="project__content">
+                    <h3 class="project__title">Task Manager App</h3>
+                    <p class="project__description">
+                        Ứng dụng quản lý công việc với tính năng thêm, sửa, xóa và đánh dấu hoàn thành.
+                    </p>
+                    <div class="project__tech">
+                        <span class="tech__tag">React</span>
+                        <span class="tech__tag">CSS3</span>
+                        <span class="tech__tag">LocalStorage</span>
+                    </div>
+                    <div class="project__links">
+                        <a href="#" class="project__link" onclick="event.stopPropagation()">📂 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="mt-80">
+    <!-- CERTIFICATES SECTION -->
+    <section class="section" id="certificates" style="margin-top: 70px;">
+        <h2 class="section__title animate-on-scroll">Chứng Chỉ & Giải Thưởng</h2>
+        <div class="certificates__list">
+            <div class="certificate__item animate-on-scroll">
+                <h3 class="certificate__name">🏆 Responsive Web Design Certification</h3>
+                <p class="certificate__issuer">FreeCodeCamp</p>
+                <p class="certificate__date">• Đang học</p>
+            </div>
+            <div class="certificate__item animate-on-scroll">
+                <h3 class="certificate__name">🏆 The Complete Prompt Engineering for AI Bootcamp</h3>
+                <p class="certificate__issuer">Udemy</p>
+                <p class="certificate__date">• Đang học</p>
+            </div>
+            <div class="certificate__item animate-on-scroll">
+                <h3 class="certificate__name">🏆 Build Responsive Real-World Websites with HTML and CSS</h3>
+                <p class="certificate__issuer">Udemy</p>
+                <p class="certificate__date">• Đang học</p>
+            </div>  
+        </div>
+    </section>
+    <hr class="mt-60">
+    <!-- CONTACT SECTION -->
+    <section class="section box-highlight" id="contact" style="background: var(--bg-gray); margin-top: 70px;">
+        <h2 class="section__title animate-on-scroll">Liên Hệ</h2>
+        <div class="contact__container">
+            <!-- Contact Info -->
+            <div class="contact__info animate-on-scroll">
+                <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Thông Tin Liên Hệ</h3>
+                
+                <div class="contact__item">
+                    <div class="contact__icon">📧</div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>voduykhanh.6275@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon">📞</div>
+                    <div>
+                        <strong>Điện thoại</strong>
+                        <p>+84 339 067 752</p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon">📍</div>
+                    <div>
+                        <strong>Địa chỉ</strong>
+                        <p>Hoài Nhơn, Bình Định</p>
+                    </div>
+                </div>
+
+                <h4 style="margin: 2rem 0 1rem 0;">Mạng Xã Hội</h4>
+                <div class="social__links">
+                    <a href="https://github.com/DuyKhanh0410" target="_blank" class="social__link github" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/DavidBecK4anh/" target="_blank" class="social__link facebook" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/pie04.10/" target="_blank" class="social__link instagram" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact__form animate-on-scroll" id="contactForm" onsubmit="handleSubmit(event)">
+                <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Gửi Tin Nhắn</h3>
+                
+                <div class="form__group">
+                    <label for="name" class="form__label">Họ và tên *</label>
+                    <input type="text" 
+                           id="name" 
+                           class="form__input" 
+                           placeholder="Nhập họ tên của bạn"
+                           required>
+                    <span class="form__error" id="nameError">Vui lòng nhập họ tên</span>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email *</label>
+                    <input type="email" 
+                           id="email" 
+                           class="form__input" 
+                           placeholder="example@email.com"
+                           required>
+                    <span class="form__error" id="emailError">Vui lòng nhập email hợp lệ</span>
+                </div>
+
+                <div class="form__group">
+                    <label for="subject" class="form__label">Tiêu đề</label>
+                    <input type="text" 
+                           id="subject" 
+                           class="form__input" 
+                           placeholder="Tiêu đề tin nhắn">
+                </div>
+
+                <div class="form__group">
+                    <label for="message" class="form__label">Tin nhắn *</label>
+                    <textarea id="message" 
+                              class="form__textarea" 
+                              placeholder="Nội dung tin nhắn (tối thiểu 10 ký tự)"
+                              required></textarea>
+                    <span class="form__error" id="messageError">Tin nhắn phải có ít nhất 10 ký tự</span>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                    📤 Gửi Tin Nhắn
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-80" style="background-color: #0c1a2e;">
+        <div class="footer__content">
+            <div class="footer__social">
+                <strong>
+                    <a href="https://github.com/DuyKhanh0410" target="_blank" aria-label="GitHub">GitHub &nbsp; </a>
+                    <a href="https://www.facebook.com/DavidBecK4anh/" target="_blank" aria-label="Facebook">Facebook &nbsp; </a>
+                    <a href="https://www.instagram.com/pie04.10/" target="_blank" aria-label="Instagram">Instagram &nbsp; </a>
+                    <a href="mailto:voduykhanh.6275@gmail.com" aria-label="Email">Email</a>
+                </strong>
+            </div>
+            <p><strong> 2025 Võ Duy Khanh. All rights reserved.</strong>&copy;</p>
+        </div>
+    </footer>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 2L5 9h4v9h6V9h4z"/>
+        </svg>
+    </button>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
