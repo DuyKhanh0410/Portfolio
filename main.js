@@ -19,16 +19,12 @@
                 ],
             },
             {
-                title: "Task Manager App",
-                description: "Ứng dụng quản lý công việc với React, hỗ trợ CRUD và lưu trữ local.",
-                fullDescription: "Ứng dụng quản lý công việc được xây dựng bằng React. Cho phép người dùng thêm, sửa, xóa và đánh dấu hoàn thành công việc. Dữ liệu được lưu trữ trong LocalStorage để giữ thông tin khi tải lại trang. Giao diện thân thiện, dễ sử dụng với các animation mượt mà.",
-                tech: ["React", "CSS3", "LocalStorage", "Hooks"],
+                title: "Weather App",
+                description: "Ứng dụng xem thời tiết được xây dựng với HTML, CSS, JavaScript thuần và API weather",
+                fullDescription: "Người dùng có thể xem thời tiết ở các thành phố thông qua việc tìm kiếm/",
+                tech: ["HTML5", "CSS3", "JavaScript", "API"],
                 features: [
-                    "Thêm công việc mới với tiêu đề và mô tả",
-                    "Chỉnh sửa thông tin công việc",
-                    "Xóa công việc không cần thiết",
-                    "Đánh dấu công việc đã hoàn thành",
-                    "Lọc công việc theo trạng thái"
+                    "Xem thời tiết, nhiệt độ ở các thành phố."
                 ],
             }
         ];
