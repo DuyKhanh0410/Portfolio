@@ -236,23 +236,6 @@
             errorElement.previousElementSibling.style.borderColor = 'var(--border-color)';
         }
 
-        //  TOAST NOTIFICATION 
-        // function showToast(message, type = 'success') {
-        //     const toast = document.getElementById('toast');
-        //     toast.textContent = message;
-        //     toast.classList.add('active');
-
-        //     setTimeout(() => {
-        //         toast.classList.remove('active');
-        //     }, 3000);
-        // }
-
-        //  DOWNLOAD CV 
-        // function downloadPF() {
-        //     // Giả lập download PF (không có file thật)
-        //     showToast('📥 Tính năng download Portfolio sẽ được thêm vào sau!', 'info');
-        // }
-
         //  SMOOTH SCROLL ENHANCEMENT 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

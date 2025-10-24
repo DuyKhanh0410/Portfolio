@@ -542,6 +542,18 @@
             transform: scale(1.05);
         }
 
+        /* response */
+
+            /* Trên màn hình nhỏ thì bỏ hiệu ứng */
+            @media (max-width: 1367px) {
+            .box-highlight, #projects {
+                box-shadow: none !important;
+                border-radius: none !important;
+                transition: none !important;
+            }
+        }
+
+
         .projects__grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -942,27 +954,6 @@
             transform: rotate(90deg);
         }
 
-        /*  TOAST NOTIFICATION  */
-        .toast {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--success-gradient);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-lg);
-            z-index: 3000;
-            opacity: 0;
-            transform: translateY(100px);
-            transition: var(--transition);
-        }
-
-        .toast.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         /*  RESPONSIVE DESIGN  */
         @media (max-width: 768px) {
             .navbar__menu {
@@ -1049,6 +1040,8 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        
 
         /*  UTILITY CLASSES  */
         .text-gradient {
