@@ -10,6 +10,7 @@
             --text-dark: #2d3748;
             --text-gray: #718096;
             --border-color: #e2e8f0;
+            --hero-bg: linear-gradient(-45deg, #d35400, #23a6d5, #23d5ab);
             
             --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
             --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
@@ -31,6 +32,7 @@
             --text-dark: #f7fafc;
             --text-gray: #cbd5e0;
             --border-color: #4a5568;
+            --hero-bg: #1a202c;
         }
 
         /*  RESET & BASE  */
@@ -88,7 +90,7 @@
             left: 0;
             right: 0;
             background: var(--bg-light);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
             z-index: 1000;
             transition: var(--transition);
         }
@@ -197,13 +199,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(-45deg, #d35400, #23a6d5, #23d5ab);
+            background: var(--hero-bg);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             padding: var(--spacing-lg) var(--spacing-md);
             margin-top: 60px;
             position: relative;
             overflow: hidden;
+            border-bottom: 1px solid white;
         }
 
         @keyframes gradient {
@@ -952,6 +955,27 @@
         .modal__close:hover {
             color: var(--text-dark);
             transform: rotate(90deg);
+        }
+
+        /* ========== TOAST NOTIFICATION ========== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--success-gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            z-index: 3000;
+            opacity: 0;
+            transform: translateY(100px);
+            transition: var(--transition);
+        }
+
+        .toast.active {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /*  RESPONSIVE DESIGN  */

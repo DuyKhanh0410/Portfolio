@@ -218,7 +218,6 @@
             }
 
             if (isValid) {
-                // Giả lập gửi form (không có backend)
                 showToast('✅ Gửi tin nhắn thành công! Cảm ơn bạn đã liên hệ.', 'success');
                 document.getElementById('contactForm').reset();
             }
@@ -234,6 +233,17 @@
             const errorElement = document.getElementById(errorId);
             errorElement.style.display = 'none';
             errorElement.previousElementSibling.style.borderColor = 'var(--border-color)';
+        }
+
+        //  TOAST NOTIFICATION 
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('active');
+
+            setTimeout(() => {
+                toast.classList.remove('active');
+            }, 3000);
         }
 
         //  SMOOTH SCROLL ENHANCEMENT 
